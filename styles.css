@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Sans-serif', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logo {
+    color: #ffffff;
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 10px 0;
+    }
+}
+
+ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        width: 100%;
+    }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b0e03d;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b0e03d;
+}
+
+main {
+    background-color: #db1b11;
+}
+
+#nowPlaying,
+#menu {
+    display: grid;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#menu {
+    background-color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 870px) {
+    #nowPlaying {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.section-title {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 3rem;
+    color: #b0e03d;
+    margin: 20px;
+}
+
+.movie {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.movie img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.movie button {
+    background-color: #56cfd7;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.movie button:hover {
+    background-color: #daff61;
+    color: #000;
+}
+
+
+.food-item {
+    margin: auto;
+    background-color: #db1b11;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #db1b11;
+    box-shadow: 2px 2px 10px ;
+}
+
+.food-item img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.food-item button {
+    background-color: #56cfd7;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.food-item button:hover {
+    background-color: #11a6d4;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #0b0b0b;
+    padding: 10px;
+}
+
+footer .logo {
+    padding: 10px;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
